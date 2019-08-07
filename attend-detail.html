@@ -109,10 +109,16 @@
 	<script>
 		$("#attendInfo").on("click",function(){
 			$("#tipsAlert").toggle();
-		})
+		});
 		$("#alertHide").on("click",function(){
 			$("#tipsAlert").hide();
-		})
+		});
+
+		/*获取日历点击时间*/
+		$(document).on("click",".item",function(){
+			console.log($(this).attr('data'));
+		});
+
 	</script>
 </body>
 </html>

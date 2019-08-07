@@ -57,15 +57,34 @@
 				<h3>营业期限</h3>
 				<input type="text" name="" value="2012-05-04" readonly class=""/>
 			</div>
-			<div class="item-block">
-				<h3>分包类型</h3>
+			<!--分类类型选择-->
+			<div class="item-block item-type">
+				<h3 class="block-h">分包类型</h3>
 				<div class="block-type">
 					<div class="type-radio">
-						<p>单工种</p>
-						<input type="radio" name="" value="单工种" />
+						<p class="selectWork">材料供应</p>
+						<input type="radio" name="worker" value="单工种" class="radioWork"/>
+					</div>
+					<div class="type-radio">
+						<p class="selectWork">整体分包</p>
+						<input type="radio" name="worker" value="单工种" class="radioWork"/>
+					</div>
+					<div class="type-radio">
+						<p class="selectWork">多工种</p>
+						<input type="radio" name="worker" value="单工种" class="radioWork"/>
+					</div>
+					<div class="type-radio">
+						<p class="selectWork work-active">单工种</p>
+						<input type="radio" name="worker" value="单工种" class="radioWork" checked/>
 					</div>
 
 				</div>
+			</div>
+
+			<!--选择工种-->
+			<div class="item-block">
+				<h3>选择工种</h3>
+				<input type="text" name="" value="2012-05-04" readonly/>
 			</div>
 		</div>
 
@@ -82,6 +101,13 @@
     <div class="alertInfo" id="alertInfo">
         <p></p>
     </div>
+<script>
+	$(".selectWork").on("click",function(){
+		$(".selectWork").removeClass('work-active');
+		$(".radioWork").attr("checked",false)
+		$(this).addClass('work-active').next("input").attr("checked",true);
+	})
+</script>
 
 
 </body>
