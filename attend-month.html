@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="[keywords]" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
+    <title>考勤记录</title>
+	<script type="text/javascript" src="./js/flexible_css.js"></script>
+	<script type="text/javascript" src="./js/flexible.js"></script>
+	<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="./js/public.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/cssreset.css">
+	<link rel="stylesheet" type="text/css" href="./css/public.css">
+	<link rel="stylesheet" type="text/css" href="./css/attend.css">
+
+
+</head>
+
+<body id="month">
+	
+	<!--头部-->
+	<div class="header">
+		<a href="attend.html"><p>今日</p></a>
+		<a href="attend-month.html"><p class="header-active">本月</p></a>
+	</div>
+	
+	<!--月度信息-->
+	<div class="month-info">
+		<div class="info-select">
+			<div>
+				<a><i class="icon-left"></i></a>
+				<p>2019.07</p>
+				<a><i class="icon-right"></i></a>
+			</div>
+
+		</div>
+		<div class="info-count">
+			<div>
+				<h3>23天</h3>
+				<p>考勤时长</p>
+			</div>
+			<div>
+				<h3>2天</h3>
+				<p>缺勤时长</p>
+			</div>
+			<div>
+				<h3>21天</h3>
+				<p>实到考勤</p>
+			</div>
+		</div>
+	</div>
+
+	<!--月度统计-->
+	<div class="month-block">
+		<div class="block-item">
+			<div class="item-title">
+				<h3>休息天数</h3>
+				<p>0天</p>
+				<i class="openItem"></i>
+			</div>
+		</div>
+		<div class="block-item">
+			<div class="item-title">
+				<h3>迟到</h3>
+				<p>1次</p>
+				<i class="openItem"></i>
+			</div>
+			<div class="item-cont">
+				<a href="attend-detail.html"><p>2019-07-06(星期六)</p></a>
+				<a href="attend-detail.html"><p>2019-07-06(星期六)</p></a>
+				<a href="attend-detail.html"><p>2019-07-06(星期六)</p></a>
+			</div>
+		</div>
+		<div class="block-item">
+			<div class="item-title">
+				<h3>早退</h3>
+				<p>0次</p>
+				<i class="openItem"></i>
+			</div>
+		</div>
+		<div class="block-item">
+			<div class="item-title">
+				<h3>加班</h3>
+				<p>3次</p>
+				<i class="openItem"></i>
+			</div>
+			<div class="item-cont">
+				<a href="attend-detail.html"><p>2019-07-06(星期六)</p></a>
+				<a href="attend-detail.html"><p>2019-07-06(星期六)</p></a>
+				<a href="attend-detail.html"><p>2019-07-06(星期六)</p></a>
+			</div>
+		</div>
+	</div>
+
+
+
+	
+	
+	
+	
+	
+<!--弹窗提示模块-->
+    <div class="alertInfo" id="alertInfo">
+        <p></p>
+    </div>
+
+	<script>
+		$(".openItem").on("click",function(){
+			$(this).toggleClass("month-icon-active");
+			$(this).parent().next().toggle();
+		})
+
+	</script>
+</body>
+</html>

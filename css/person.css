@@ -1,0 +1,142 @@
+body {
+	background:#f7f7f7;
+}
+.header {
+	width:100%;
+	height:3.24rem;
+	background:#14AC78;
+	position:relative;
+	padding:1.30666666rem 0.4rem 0 0.8rem;
+}
+.header div{
+	float:left;
+}
+.header .header-img {
+	text-align:center;
+	position:relative;
+	width:1.36rem;
+}
+.header .header-img img{
+	width:1.36rem;
+	height:1.36rem;
+	border-radius:50rem;
+	border:0.06666666rem solid #ccc;
+}
+.header .header-img i{
+	display:block;
+	width:0.33333333rem;
+	height:0.33333333rem;
+	background:url(../images/v.png) no-repeat center center;
+	background-size:0.33333333rem;
+	position:absolute;
+	top:1.02rem;
+	left:0.8rem;
+}
+.header .header-info {
+	margin-left:0.38666666rem;
+	width:calc(100% - 2.02666666rem);
+}
+.header .header-info p{
+	color:#fff;
+	line-height:0.68rem;
+	font-size:0.42666666rem;
+	letter-spacing:0.1rem;
+	font-weight:800;
+}
+.header .header-info .info-vice{
+	margin-top:0.2rem;
+}
+.header .header-info .info-vice i {
+	display:inline-block;
+	width:0.32rem;
+	height:0.32rem;
+	background:url(../images/icon-001.png) no-repeat center center;
+	background-size:0.32rem;
+}
+.header .header-info .info-vice span{
+	font-size:0.32rem;
+	color:#ECF6F3;
+}
+.header .header-info .info-vice span:last-child{
+	margin-left:0.2rem;
+}
+.header .header-open {
+	width:0.28rem;
+	height:1.36rem;
+	display:flex;
+	align-items:center;
+}
+.header .header-open i{
+	display:block;
+	width:0.28rem;
+	height:0.28rem;
+	background:url(../images/icon-002.png) no-repeat center center;
+	background-size:0.28rem;
+}
+/*列表*/
+.person-item {
+	border-bottom:0.13333333rem solid #f7f7f7;
+	background:#fff;
+	padding:0 0.4rem;
+}
+.person-item .item-tr{
+	height:1.26666666rem;
+	border-bottom:1px solid #f7f7f7;
+}
+.person-item .item-tr a{
+	
+}
+.person-item .item-tr i{
+	display:block;
+	width:0.48rem;
+	height:1.26666666rem;
+	float:left;
+}
+.person-item .item-tr .item-open {
+	float:right;
+	background:url(../images/open-right.png) no-repeat center center;
+	background-size:0.28rem;
+}
+.person-item .item-tr p {
+	line-height:1.26666666rem;
+	float:left;
+}
+.person-item .item-tr .item-title {
+	font-size:0.37333333rem;
+	color:#262728;
+	margin-left:0.4rem;
+}
+.person-item .item-tr .item-auth {
+	font-size:0.32rem;
+	color:#CCCFD2;
+	margin-left:0.4rem;
+	position:absolute;
+	right:1rem;
+}
+.person-item .item-tr .auth-active {
+	color:#1FC588;
+}
+i.person-icon-1{
+	background:url(../images/person-icon-1.png) no-repeat center center;
+	background-size:0.48rem;
+}
+i.person-icon-2{
+	background:url(../images/person-icon-2.png) no-repeat center center;
+	background-size:0.48rem;
+}
+i.person-icon-3{
+	background:url(../images/person-icon-3.png) no-repeat center center;
+	background-size:0.48rem;
+}
+i.person-icon-4{
+	background:url(../images/person-icon-4.png) no-repeat center center;
+	background-size:0.48rem;
+}
+i.person-icon-5{
+	background:url(../images/person-icon-5.png) no-repeat center center;
+	background-size:0.48rem;
+}
+i.person-icon-6{
+	background:url(../images/person-icon-6.png) no-repeat center center;
+	background-size:0.48rem;
+}

@@ -1,0 +1,94 @@
+* { margin: 0; padding: 0; }
+body { font-family: "Microsoft Yahei"; font-size: 12px; color: #888; }
+a, a:hover { color: #888; text-decoration: none; }
+ul, li { list-style: none; }
+
+.calendar {
+  display: none;
+  width: 100%;
+  padding:0 0.1rem 0.68rem 0.1rem;
+  background-color: #f7f7f7;
+
+}
+.calendar-title {
+  position: relative;
+  height:1.04rem;
+  line-height: 1.04rem;
+  text-align:center;
+}
+.calendar-title a.title {
+  display: inline-block;
+  font-size: 0.32rem;
+  color:#262728;
+  margin:0 0.4rem;
+  float:left
+}
+.calendar-title .arrow {
+  overflow: hidden;
+  display:inline-block;
+  margin:0 auto;
+
+}
+.calendar-title .arrow span {
+  color: #262728;
+  font-size: 0.32rem;
+  cursor: pointer;
+  float:left;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.calendar-title .arrow span:hover {
+  color: #888;
+}
+.calendar-title .arrow-prev {
+  float: left;
+}
+.calendar-title .arrow-next {
+  float: right;
+}
+.calendar-week,
+.calendar-date {
+  overflow: hidden;
+}
+.calendar-week .item,
+.calendar-date .item {
+  float: left;
+  width: calc(100% / 7);
+  height: 0.68rem;
+  line-height: 0.68rem;
+  text-align: center;
+}
+.calendar-week {
+  color:#BBBBBC;
+  border-bottom: 1px solid #fff;
+  font-weight: bold;
+  font-size: 0.32rem;
+}
+.calendar-date {}
+.calendar-date .item {
+  color:#ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0.32rem;
+}
+.calendar-date .item:hover,
+.calendar-date .item-curMonth:hover {
+  color:#fff;
+  background:url(../images/calendar-today.png) no-repeat center center;
+  background-size:0.6rem ;
+}
+.calendar-date .item-curMonth {
+  color: #262728;
+}
+.calendar-date .item-curDay,
+.calendar-date .item-curDay:hover {
+  color: #fff;
+
+  background:url(../images/calendar-active.png) no-repeat center center;
+  background-size:0.6rem ;
+
+}

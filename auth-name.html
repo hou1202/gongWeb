@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="[keywords]" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
+    <title>实名认证</title>
+	<script type="text/javascript" src="./js/flexible_css.js"></script>
+	<script type="text/javascript" src="./js/flexible.js"></script>
+	<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="./js/public.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/cssreset.css">
+	<link rel="stylesheet" type="text/css" href="./css/public.css">
+	<link rel="stylesheet" type="text/css" href="./css/auth.css">
+
+
+</head>
+
+<body>
+	<form>
+		<div class="select-work">
+			<h3>所属工种</h3>
+			<select name="">
+				<option value="1">木工</option>
+				<option value="2">水电工</option>
+				<option value="3">瓦工</option>
+				<option value="4">焊工</option>
+			</select>
+		</div>
+
+		<div class="work-block">
+			<div class="work-item">
+				<div class="item-left">
+					<!--可以使用a 标签，<a class="item-left">-->
+					<h3>人脸识别</h3>
+					<p>上传您的脸部识别</p>
+				</div>
+				<div class="item-right">
+					<img src="./images/auth-l.png" class="right-img"/>
+				</div>
+			</div>
+
+			<div class="work-item">
+				<div class="item-left">
+					<h3>身份证正面</h3>
+					<p>上传您的身份证人像面</p>
+				</div>
+				<div class="item-right">
+					<img src="./images/auth-z.png" class="right-img"/>
+				</div>
+			</div>
+
+			<div class="work-item">
+				<div class="item-left">
+					<h3>身份证反面</h3>
+					<p>上传您的身份证国徽面</p>
+				</div>
+				<div class="item-right">
+					<img src="./images/auth-f.png" class="right-img"/>
+				</div>
+			</div>
+		</div>
+
+		<a href="auth.html" type="button" class="button-type-big button-margin-top">完成认证</a>
+	</form>
+	
+	
+
+	
+	
+	
+	
+<!--弹窗提示模块-->
+    <div class="alertInfo" id="alertInfo">
+        <p></p>
+    </div>
+
+
+</body>
+</html>

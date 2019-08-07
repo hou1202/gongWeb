@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="[keywords]" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
+    <title>添加银行卡</title>
+	<script type="text/javascript" src="./js/flexible_css.js"></script>
+	<script type="text/javascript" src="./js/flexible.js"></script>
+	<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="./js/public.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/cssreset.css">
+	<link rel="stylesheet" type="text/css" href="./css/public.css">
+	<link rel="stylesheet" type="text/css" href="./css/bank.css">
+
+
+</head>
+
+<body id="bank-card">
+	
+	<!--标题-->
+	<div class="card-item card-title">
+		<p>请添加<span>李自然</span>的银行卡</p>
+		<i id="cardInfo"></i>
+	</div>
+
+	<form>
+		<div class="card-item card-input">
+			<h3>卡号</h3>
+			<input type="number" name="" readonly placeholder="请输入银行卡号"/>
+			<a><i></i></a>
+		</div>
+
+		<a href="bank-confirm.html" class="card-button">下一步</a>
+		<!--<button type="button" class="card-button">下一步</button>-->
+	</form>
+
+	<!--弹窗提示层-->
+	<div class="tips-block" id="tipsAlert">
+		<div class="tips-alert" >
+			<div class="alert-block">
+				<h3>持卡人说明</h3>
+				<p>为保证账户资金安全，只能绑定认证用户本人的银行卡</p>
+				<div class="alert-button">
+					<button type="button" class="button-single" id="alertHide">知道了</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<!--弹窗提示模块-->
+    <div class="alertInfo" id="alertInfo">
+        <p></p>
+    </div>
+
+
+<script>
+	$("#cardInfo").on("click",function(){
+		$("#tipsAlert").toggle();
+	})
+    $("#alertHide").on("click",function(){
+        $("#tipsAlert").hide();
+    })
+</script>
+
+</body>
+</html>

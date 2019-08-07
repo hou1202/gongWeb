@@ -1,0 +1,40 @@
+body {
+	background:#f7f7f7;
+}
+.list {
+	background:#fff;
+	padding:0 0.4rem;
+}
+.list .list-item {
+	display:block;
+	height:1.14666666rem;
+	line-height:1.14666666rem;
+	border-bottom:1px solid #f7f7f7;
+	overflow:hidden;
+}
+.list .list-item h3 {
+	font-size:0.37333333rem;
+	color:#262728;
+	display:inline-block;
+	float:left;
+}
+.list .list-item p {
+	font-size:0.37333333rem;
+	color:#8E8F90;
+	display:inline-block;
+	text-align:right;
+	
+	overflow:hidden;
+	text-overflow:ellipsis;
+	display:-webkit-box;
+	-webkit-line-clamp:1;
+	-webkit-box-orient:vertical;
+}
+.list .list-item img {
+	width:0.56rem;
+	height:0.56rem;
+	border-radius:50rem;
+	float:right;
+	margin-top:0.29333333rem;
+	border:1px solid #edebeb;
+}

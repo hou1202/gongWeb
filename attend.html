@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="[keywords]" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
+    <title>考勤记录</title>
+	<script type="text/javascript" src="./js/flexible_css.js"></script>
+	<script type="text/javascript" src="./js/flexible.js"></script>
+	<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="./js/public.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/cssreset.css">
+	<link rel="stylesheet" type="text/css" href="./css/public.css">
+	<link rel="stylesheet" type="text/css" href="./css/attend.css">
+
+
+</head>
+
+<body>
+	
+	<!--头部-->
+	<div class="header">
+		<a><p class="header-active">今日</p></a>
+		<a href="attend-month.html"><p>本月</p></a>
+	</div>
+	
+	<!--个人信息-->
+	<div class="attend-info">
+		<div class="info-img">
+			<img src="./images/default-head.png" />
+		</div>
+		<div class="info-cont">
+			<h3>李自然<p>2019.06.03</p></h3>
+			<div class="info-class">
+				<p class="class-con">考勤班组：</p>
+				<p class="class-pro">天鹅湖项目组天鹅湖项目组天</p>
+				<p class="class-con" id="attendInfo">(考勤规则)</p>
+			</div>
+		</div>
+	</div>
+
+	<!--时间轴-->
+	<div class="line-time">
+		<div class="time-item">
+			<div class="item-circle"></div>
+			<p class="time-pip">上班时间07:00</p>
+			<h3 class="time-act">打卡时间06:53</h3>
+		</div>
+
+		<div class="time-item">
+			<div class="item-circle"></div>
+			<p class="time-pip">上班时间07:00</p>
+			<button type="button" class="time-button time-verify">申请审核中</button>
+
+		</div>
+
+		<div class="time-item">
+			<div class="item-circle"></div>
+			<p class="time-pip">上班时间07:00</p>
+			<h3 class="time-act">打卡时间06:53<span>(迟到)</span></h3>
+		</div>
+
+		<div class="time-item">
+			<div class="item-circle"></div>
+			<p class="time-pip">上班时间07:00</p>
+			<button type="button" class="time-button time-apply">申请补卡</button>
+		</div>
+	</div>
+
+	<!--弹窗提示层-->
+	<div class="tips-block" id="tipsAlert">
+		<div class="tips-alert" >
+			<div class="alert-block">
+				<h3>考勤规则说明</h3>
+				<p>第1次 7:00-12:00</br>
+				第2次 14:00-18:00</p>
+				<p>
+					所有班次</br>
+					迟到5分钟以内不记迟到</br>
+					迟到三十分钟及以上视为严重迟到</br>
+					迟到120分钟以上视为旷工</br>
+					提前下班视为早退
+				</p>
+				<div class="alert-button">
+					<button type="button" class="button-single" id="alertHide">知道了</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	
+	
+	
+	
+<!--弹窗提示模块-->
+    <div class="alertInfo" id="alertInfo">
+        <p></p>
+    </div>
+
+	<script>
+		$("#attendInfo").on("click",function(){
+			$("#tipsAlert").toggle();
+		})
+		$("#alertHide").on("click",function(){
+			$("#tipsAlert").hide();
+		})
+	</script>
+</body>
+</html>
