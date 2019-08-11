@@ -60,24 +60,28 @@
 	float:right;
 	color:#262728;
 }
+.attend-info .info-cont .info-class {
+	height:0.5rem;
+	overflow: hidden;
+}
 .attend-info .info-cont .info-class p {
 
 	font-size:0.32rem;
 	color:#CCCFD2;
 	line-height:0.5rem;
 	float:left;
-
-	overflow:hidden;
-	text-overflow:ellipsis;
-	display:-webkit-box;
-	-webkit-line-clamp:1;
-	-webkit-box-orient:vertical;
 }
 .attend-info .info-cont .info-class .class-con {
 	width:1.6rem;
 }
 .attend-info .info-cont .info-class .class-pro {
 	max-width:calc(100% - 3.2rem);
+
+	overflow:hidden;
+	text-overflow:ellipsis;
+	display:-webkit-box;
+	-webkit-line-clamp:1;
+	-webkit-box-orient:vertical;
 }
 .attend-info .info-cont .info-class p:last-child {
 	color:#1FC588;

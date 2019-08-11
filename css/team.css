@@ -1,0 +1,66 @@
+
+.team-search {
+	padding:0.28rem 0.4rem;
+	position:relative;
+	border-bottom:1px solid #ECEFF3;
+}
+.team-search input[type=text] {
+	width:calc(100% - 4rem);
+	height:0.8rem;
+	line-height: 0.8rem;
+	background:#F7F7F8;
+	border-radius:0.13333333rem;
+	font-size:0.37333333rem;
+	color:#D4D6D7;
+	border:none;
+	padding-left:1.2rem;
+}
+.team-search button {
+	width: 1.2rem;
+	height:0.8rem;
+	border:none;
+	background:url(../images/bank-rest.png) no-repeat center center;
+	background-size:0.36rem;
+	position:absolute;
+}
+.team-search .search-invite {
+	display:block;
+	width:2rem;
+	font-size:0.37333333rem;
+	color:#B2B4B6;
+	line-height: 0.8rem;
+	text-align:center;
+	float:right;
+	position:relative;
+}
+.team-search .search-invite i{
+	display:block;
+	font-size:0.28rem;
+	width:0.32rem;
+	height:0.32rem;
+	line-height:0.32rem;
+	background:#1FC588;
+	color:#fff;
+	border-radius:50rem;
+	position: absolute;
+	right:0;
+	top:0;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
